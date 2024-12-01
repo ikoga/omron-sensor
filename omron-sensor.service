@@ -1,0 +1,8 @@
+[Unit]
+Description=OMRON 2JCIE-BU01 Sensor Prometheus exporter
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/omron-sensor/sensor.py
+
+[Install]
+WantedBy=multi-user.target
