@@ -99,4 +99,4 @@ if __name__ == '__main__':
         except (FileNotFoundError, serial.serialutil.SerialException) as e:
             print(e)
 
-        time.sleep(5)
+        time.sleep(60)
