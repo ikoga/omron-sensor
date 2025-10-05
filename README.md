@@ -1,4 +1,4 @@
-# OMRON 2JCIE-BU01 Prometheus exporter
+# OMRON 2JCIE-BU01 用 Prometheus exporter
 
 - GitHub から取得
 
@@ -17,7 +17,7 @@ $ git clone https://github.com/ikoga/omron-sensor
 # systemctl enable --now omron-sensor.service
 ```
 
-- /etc/sysconfig/prometheus-node_exporter にテキストインポートを追加して再起動
+- `/etc/sysconfig/prometheus-node_exporter` にテキストインポートを追加して再起動
 
 ```
 ARGS='--collector.textfile.directory=/var/lib/prometheus/node-exporter'
@@ -28,4 +28,4 @@ ARGS='--collector.textfile.directory=/var/lib/prometheus/node-exporter'
 
 # 表示サンプル
 
-![Grafana](https://github.com/ikoga/blob/master/grafana.png)
+![Grafana](grafana.png)
